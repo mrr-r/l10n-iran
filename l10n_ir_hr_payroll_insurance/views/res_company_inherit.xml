@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_hr_payslip_inherit_form">
+        <field name="name">res.company.inherit.form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form" />
+        <field name="arch" type="xml">
+            <page name="general_info" position="after">
+                <page string="Insurance Info" name="insurance_info">
+                    <group>
+                        <group>
+                            <field name="l10n_ir_insurance_workshop_code" />
+                            <field name="l10n_ir_workshop_address" />
+                            <field name="l10n_ir_employer_id" />
+                            <field name="l10n_ir_insurance_rate" />
+                            <field name="l10n_ir_insurance_contract_line" />
+                        </group>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+</odoo>

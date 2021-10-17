@@ -1,0 +1,877 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ir_hr_payroll_insurance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-17 08:18+0000\n"
+"PO-Revision-Date: 2021-10-17 08:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fa\n"
+"Plural-Forms: \n"
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ir_hr_payroll_insurance
+msgid "Iran - Employee payroll insurance"
+msgstr "ایران - بیمه حقوق و دستمزد"
+
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_hr_job__l10n_ir_insurance_code
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_job
+msgid "A code for the job from list given by insurance company."
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__move_id
+msgid "Accounting Entry"
+msgstr "داده حسابداری"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_form_view
+msgid "Accounting Information"
+msgstr "اطلاعات حسابداری"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_needaction
+msgid "Action Needed"
+msgstr "اقدام مورد نیاز است"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#, python-format
+msgid "At least one of accounting information not configured."
+msgstr "حداقل یکی از اطلاعات حسابداری پیکربندی نشده است."
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_attachment_count
+msgid "Attachment Count"
+msgstr "تعداد پیوست"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_bdate
+msgid "Birth Date"
+msgstr "تاریخ تولد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__dsk_kind__3
+msgid "Change list"
+msgstr "تغییر لیست"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model,name:l10n_ir_hr_payroll_insurance.model_res_company
+msgid "Companies"
+msgstr "شرکت‌ها"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__company_id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__company_id
+msgid "Company"
+msgstr "شرکت"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__complementary_non_commission_not_included
+#, python-format
+msgid "Complementary list non-commission not included unemployment insurance"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__complementary_non_commission_included
+#, python-format
+msgid "Complementary list non-commission unemployment insurance"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__complementary_commission
+#, python-format
+msgid "Complementary list of commission"
+msgstr "لیست مکمل پورسانت ها"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_form_view
+msgid "Compute Insurance"
+msgstr "محاسبه بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_form_view
+msgid "Confirm"
+msgstr "تایید"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__state__confirm
+msgid "Confirmed"
+msgstr "تایید شده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__end_date
+msgid "Contract End Date"
+msgstr "تاریخ پایان قرارداد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__mon_pym
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_res_company__l10n_ir_insurance_contract_line
+msgid "Contract Line"
+msgstr "سطر قرارداد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_employee__l10n_ir_insured
+msgid "Covered by Insurance"
+msgstr "مشمول بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_form_view
+msgid "Create Employer Entry"
+msgstr "ایجاد سند کارفرما"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__create_uid
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__create_uid
+msgid "Created by"
+msgstr "ایجاد شده توسط"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__create_date
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__create_date
+msgid "Created on"
+msgstr "ایجاد شده در"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__credit_id
+msgid "Credit Account"
+msgstr "حساب بستانکار"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__custom
+#, python-format
+msgid "Custom"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_file
+msgid "DSKKAR00 File"
+msgstr "فایل کارکرد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsw_file
+msgid "DSKWOR00 File"
+msgstr "فایل ریز کارکرد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_rooz
+msgid "Daily Wage"
+msgstr "دستمزد روزانه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__birthday
+msgid "Date of Birth"
+msgstr "تاریخ تولد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__debit_id
+msgid "Debit Account"
+msgstr "حساب بدهکار"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_hr_job__l10n_ir_hard_harmful_job
+msgid "Declare if this job is known hard or harmful by insurance company."
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__devotee_25
+#, python-format
+msgid "Devotee list of 25% handicapped"
+msgstr "لیست ایثارگران با معلولیت 25٪"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__devotee_50
+#, python-format
+msgid "Devotee list of 50% handicapped"
+msgstr "لیست ایثارگران با معلولیت 50%"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_form_view
+msgid "Disk Information"
+msgstr "اطلاعات دیسکت"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_tree_view
+msgid "Disk Karkard"
+msgstr "دیسکت کارکارد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsw_ids
+msgid "Disk Work Lines"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_job__display_name
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_payslip__display_name
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_salary_rule__display_name
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__display_name
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__display_name
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_res_company__display_name
+msgid "Display Name"
+msgstr "نام نمایش داده شده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__state__done
+msgid "Done"
+msgstr "انجام شده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__state__draft
+msgid "Draft"
+msgstr "پیش نویس"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model,name:l10n_ir_hr_payroll_insurance.model_hr_employee
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__employee_id
+msgid "Employee"
+msgstr "کارمند"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_bime
+msgid "Employee Insurance Share"
+msgstr "سهم بیمه کارکنان"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:hr.salary.rule,name:l10n_ir_hr_payroll_insurance.rule_employee_insurance
+msgid "Employee Insurance Share (7%)"
+msgstr "سهم بیمه کارکنان (7٪)"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_res_company__l10n_ir_employer_id
+msgid "Employer"
+msgstr "کارفرما"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_rate
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_res_company__l10n_ir_insurance_rate
+msgid "Employer Insurance Share"
+msgstr "سهم بیمه کارفرما"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_farm
+msgid "Employer Name"
+msgstr "نام کارفرما"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#, python-format
+msgid "Employer Share of Insurance Cost"
+msgstr "هزینه بیمه سهم کارفرما"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#, python-format
+msgid "Employer Share of Insurance Payable"
+msgstr "بیمه قابل پرداخت سهم کارفرما"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_edate
+msgid "End Date"
+msgstr "تاریخ پایان"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_dname
+msgid "Father Name"
+msgstr "نام پدر"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__recruitment_date
+msgid "First Contract Date"
+msgstr "تاریخ قرارداد اول"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_fname
+msgid "First Name"
+msgstr "نام"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_follower_ids
+msgid "Followers"
+msgstr "دنبال کنندگان"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "دنبال کنندگان (کانال ها)"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "دنبال کنندگان (طرفهای همکار)"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_sex
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__gender
+msgid "Gender"
+msgstr "جنسیت"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_bimh
+msgid "Hard and Harmful Rate"
+msgstr "نرخ مشاغل سخت و زیان آور"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_job__l10n_ir_hard_harmful_rate
+msgid "Hard/Harmful Rate"
+msgstr "نرخ مشاغل سخت و زیان آور"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_employee__id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_job__id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_payslip__id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_salary_rule__id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_res_company__id
+msgid "ID"
+msgstr "شناسه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_idno
+msgid "ID Number"
+msgstr "شماره شناسنامه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_needaction
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+"اگر این گزینه را انتخاب کنید، پیام‌ های جدید به توجه شما نیاز خواهند داشت."
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_has_error
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "اگر این گزینه را انتخاب کنید، برخی پیامها، خطای تحویل خواهند داشت."
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_hr_employee__l10n_ir_insured
+msgid "If employee should get insurance or not"
+msgstr "آیا کارمند باید بیمه دریافت کند یا نه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.view_employee_form
+msgid "Insurance"
+msgstr "بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_job__l10n_ir_insurance_code
+msgid "Insurance Code"
+msgstr "کد بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:hr.salary.rule,name:l10n_ir_hr_payroll_insurance.rule_employee_insurance_difference
+msgid "Insurance Difference (30%)"
+msgstr "تفاوت بیمه (30٪)"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:hr.payslip.input.type,name:l10n_ir_hr_payroll_insurance.other_input_insurance_difference
+msgid "Insurance Difference (days)"
+msgstr "تفاوت بیمه (30٪)"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.actions.act_window,name:l10n_ir_hr_payroll_insurance.action_insurance_disk
+#: model:ir.model,name:l10n_ir_hr_payroll_insurance.model_l10n_ir_hr_insurance_disk
+#: model:ir.ui.menu,name:l10n_ir_hr_payroll_insurance.menu_insurance_disk
+msgid "Insurance Disk"
+msgstr "دیسک بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model,name:l10n_ir_hr_payroll_insurance.model_l10n_ir_hr_insurance_disk
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__insurance_disk_id
+#: model:ir.ui.menu,name:l10n_ir_hr_payroll_insurance.menu_hr_insurance_disk
+msgid "Insurance Disk"
+msgstr "دیسک بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model,name:l10n_ir_hr_payroll_insurance.model_l10n_ir_hr_insurance_disk_line
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_form_view
+msgid "Insurance Disk Lines"
+msgstr "سطرهای دیسک بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_employee__l10n_ir_insurance_id
+msgid "Insurance ID"
+msgstr "شناسه بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_hr_employee__l10n_ir_insurance_id
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_id1
+msgid "Insurance ID that will be in insurance list"
+msgstr "شناسه بیمه ای که در لیست بیمه خواهد بود"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.view_company_form
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.view_hr_job_form
+msgid "Insurance Info"
+msgstr "اطلاعات بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__journal_id
+msgid "Insurance Journal"
+msgstr "دفتر روزنامه بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.actions.act_window,name:l10n_ir_hr_payroll_insurance.hr_insurance_disk_action
+msgid "Insurance List"
+msgstr "لیست بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#, python-format
+msgid "Insurance List for %s"
+msgstr "لیست بیمه برای %s"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_id1
+msgid "Insurance Number"
+msgstr "شماره بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__mon_pym
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_res_company__l10n_ir_insurance_contract_line
+msgid "Insurance contract line"
+msgstr "سطر قرارداد بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_adrs
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_res_company__l10n_ir_workshop_address
+msgid "Insurance workshop address limited by 40 characters."
+msgstr "آدرس کارگاه بیمه که به 40 کاراکتر محدود است."
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_id
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_id
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_res_company__l10n_ir_insurance_workshop_code
+msgid "Insurance workshop code"
+msgstr "کد کارگاه بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_salary_rule__l10n_ir_insured
+msgid "Insured"
+msgstr "بیمه شده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsw_filename
+msgid "Insured Information"
+msgstr "اطلاعات بیمه شده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_is_follower
+msgid "Is Follower"
+msgstr "دنبال کننده است"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_job__l10n_ir_hard_harmful_job
+msgid "Is Hard/Harmful Job ?"
+msgstr "آیا شغل سخت و زیان آور است؟"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_idate
+msgid "Issued Date"
+msgstr "تاریخ صدور"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_job
+msgid "Job Code"
+msgstr "کد شغل"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_ocp
+msgid "Job Description"
+msgstr "شرح شغل"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model,name:l10n_ir_hr_payroll_insurance.model_hr_job
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__job_id
+msgid "Job Position"
+msgstr "موقعیت شغلی"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_job____last_update
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_payslip____last_update
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_hr_salary_rule____last_update
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk____last_update
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line____last_update
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_res_company____last_update
+msgid "Last Modified on"
+msgstr "آخرین ویرایش در"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_lname
+msgid "Last Name"
+msgstr "نام خانوادگی"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__write_uid
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__write_uid
+msgid "Last Updated by"
+msgstr "آخرین به روز رسانی توسط"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__write_date
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__write_date
+msgid "Last Updated on"
+msgstr "آخرین به روزرسانی در"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_disc
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__list_description
+msgid "List Description"
+msgstr "شرح لیست"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_listno
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_listno
+msgid "List No"
+msgstr "شماره لیست"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_kind
+msgid "List Type"
+msgstr "نوع لیست"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "پیوست اصلی"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__main_commission
+#, python-format
+msgid "Main list of current commission"
+msgstr "لیست اصلی پورسانت های جاری"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__main_commission_delayed
+#, python-format
+msgid "Main list of delayed commission"
+msgstr "لیست اصلی پورسانت های تاخیردار"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__main_included
+#, python-format
+msgid "Main list of included unemployment insurance (current month)"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__main_included_delayed
+#, python-format
+msgid "Main list of included unemployment insurance (monthly delayed)"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__list_description__main_not_included
+#, python-format
+msgid "Main list of not included for unemployment insurance (current month)"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#, python-format
+msgid "Man"
+msgstr "مرد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_has_error
+msgid "Message Delivery error"
+msgstr "خطای تحویل پیام"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_ids
+msgid "Messages"
+msgstr "پیام ها"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_mm
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_mm
+msgid "Month"
+msgstr "ماه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_maz
+msgid "Monthly Benefits"
+msgstr "مزایای ماهانه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_mah
+msgid "Monthly Wage"
+msgstr "دستمزد ماهانه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__dsk_kind__1
+msgid "Monthly list"
+msgstr "لیست ماهانه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__name
+msgid "Name"
+msgstr "نام"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__per_natcod
+msgid "National Code"
+msgstr "کد ملی"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_nat
+msgid "Nationality"
+msgstr "ملیت"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_needaction_counter
+msgid "Number of Actions"
+msgstr "تعداد عملیات"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_num
+msgid "Number of Employees"
+msgstr "تعداد کارکنان"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_has_error_counter
+msgid "Number of errors"
+msgstr "تعداد خطاها"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "تعداد پیامهایی که نیاز به اقدام دارند"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "تعداد پیام های دارای خطای تحویل"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_unread_counter
+msgid "Number of unread messages"
+msgstr "تعداد پیام‌ های خوانده نشده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model,name:l10n_ir_hr_payroll_insurance.model_hr_payslip
+msgid "Pay Slip"
+msgstr "فیش حقوق"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__payslip_ids
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__payslip_id
+msgid "Payslip"
+msgstr "فیش حقوق"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_prate
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_prate
+msgid "Percentage Rate"
+msgstr "درصد نرخ"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields.selection,name:l10n_ir_hr_payroll_insurance.selection__l10n_ir_hr_insurance_disk__dsk_kind__2
+msgid "Periodic list"
+msgstr "لیست دوره ای"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_idplc
+msgid "Place of Issue"
+msgstr "محل صدور"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_hr_job__l10n_ir_hard_harmful_rate
+msgid "Rate of harness of the job defined by insurance company."
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطای تحویل پیامک"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model,name:l10n_ir_hr_payroll_insurance.model_hr_salary_rule
+msgid "Salary Rule"
+msgstr "قانون حقوق و دستمزد"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.hr_insurance_disk_form_view
+msgid "Set to Draft"
+msgstr "تغییر به پیش نویس"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__start_date
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_sdate
+msgid "Start Date"
+msgstr "تاریخ شروع"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__state
+msgid "State"
+msgstr "وضعیت"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_nat
+msgid "The full name of the country."
+msgstr "نام کامل کشور."
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_trooz
+msgid "Total Daily Wage"
+msgstr "مجموع دستمزد روزانه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_tbime
+msgid "Total Employee Insurance Share"
+msgstr "مجموع سهم بیمه کارمند"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_tkoso
+msgid "Total Employer Insurance Share"
+msgstr "مجموع سهم بیمه کارفرما"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_tmaz
+msgid "Total Monthly Benefits"
+msgstr "مجموع مزایای ماهانه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_tmah
+msgid "Total Monthly Wage"
+msgstr "مجموع دستمزد ماهانه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_bic
+msgid "Total Unemployment Share"
+msgstr "سهم کل بیکاری"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_tmash
+msgid "Total Wages and Benefits"
+msgstr "مجموع دستمزدها و مزایا"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_ttotl
+msgid "Total Wages and Benefits Includes and Excludes"
+msgstr ""
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_tdd
+msgid "Total Work Days"
+msgstr "کل روزهای کاری"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_unread
+msgid "Unread Messages"
+msgstr "پیام های خوانده نشده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "شمارشگر پیام‌ های خوانده ‌نشده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_totl
+msgid "Wage and Benefits"
+msgstr "دستمزد و مزایا"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_mash
+msgid "Wage and Benefits Included"
+msgstr "دستمزد و مزایا شامل شده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__website_message_ids
+msgid "Website Messages"
+msgstr "پیام های وب سایت"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,help:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__website_message_ids
+msgid "Website communication history"
+msgstr "سوابق ارتباطات وب سایت"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#, python-format
+msgid "Woman"
+msgstr "زن"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_dd
+msgid "Worked Days"
+msgstr "روزهای کار شده"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_adrs
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_res_company__l10n_ir_workshop_address
+msgid "Workshop Address"
+msgstr "آدرس کارگاه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_id
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_res_company__l10n_ir_insurance_workshop_code
+msgid "Workshop Code"
+msgstr "کد کارگاه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_filename
+msgid "Workshop Info"
+msgstr "اطلاعات کارگاه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_name
+msgid "Workshop Name"
+msgstr "نام کارگاه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsk_yy
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__dsw_yy
+msgid "Year"
+msgstr "سال"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk__dsw_filename
+msgid "Insured information"
+msgstr "اطلاعات بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model:ir.model.fields,field_description:l10n_ir_hr_payroll_insurance.field_l10n_ir_hr_insurance_disk_line__insurance_disk_id
+msgid "Insurance disk"
+msgstr "دیسک بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.view_hr_job_form_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_ir_hr_payroll_insurance.view_hr_payslip_inherit_form
+msgid "Insurance Info"
+msgstr "اطلاعات بیمه"
+
+#. module: l10n_ir_hr_payroll_insurance
+#: code:addons/l10n_ir_hr_payroll_insurance/models/hr_insurance_disk.py:0
+#, python-format
+msgid "Insurance List for %s"
+msgstr "لیست بیمه برای %s"

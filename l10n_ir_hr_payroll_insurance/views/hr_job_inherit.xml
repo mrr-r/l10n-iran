@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_hr_job_form_inherit">
+        <field name="name">hr.job.inherit.form</field>
+        <field name="model">hr.job</field>
+        <field name="inherit_id" ref="hr.view_hr_job_form" />
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <pape string="Insurance Info" name="insurance_info">
+                    <group>
+                        <group>
+                            <field name="l10n_ir_insurance_code" />
+                            <field name="l10n_ir_hard_harmful_job" />
+                            <field
+                                name="l10n_ir_hard_harmful_rate"
+                                attrs="{'invisible': [('l10n_ir_hard_harmful_job', '=', False)], 'required': [('l10n_ir_hard_harmful_job', '=', True)]}"
+                            />
+                        </group>
+                    </group>
+                </pape>
+            </notebook>
+        </field>
+    </record>
+</odoo>

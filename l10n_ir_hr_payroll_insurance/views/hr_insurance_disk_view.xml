@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="hr_insurance_disk_form_view" model="ir.ui.view">
+            <field name="name">l10n.ir.hr.insurance.disk.form</field>
+            <field name="model">l10n.ir.hr.insurance.disk</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button
+                            name="action_confirm"
+                            string="Confirm"
+                            type="object"
+                            class="oe_highlight"
+                            states="draft"
+                        />
+                        <button
+                            name="compute_insurance"
+                            string="Compute Insurance"
+                            type="object"
+                            states="draft"
+                        />
+                        <button
+                            name="action_done"
+                            string="Create Employer Entry"
+                            type="object"
+                            class="oe_highlight"
+                            states="confirm"
+                        />
+                        <button
+                            name="set_draft"
+                            string="Set to Draft"
+                            type="object"
+                            class="btn-secondary"
+                            states="confirm,done"
+                        />
+                        <field name="state" widget="statusbar" />
+                    </header>
+                    <sheet>
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="company_id" />
+                                <field name="dsk_id" />
+                                <field name="dsk_farm" />
+                                <field name="dsk_adrs" />
+                                <field name="dsk_rate" />
+                                <field name="mon_pym" />
+                            </group>
+                            <group>
+                                <field
+                                    name="start_date"
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Insurance Disk Lines">
+                                <field
+                                    name="dsw_ids"
+                                    attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                >
+                                    <tree string="Disk Karkard" create="0">
+                                        <field name="dsw_fname" />
+                                        <field name="dsw_lname" />
+                                        <field name="dsw_dname" optional="hide" />
+                                        <field name="dsw_id1" optional="show" />
+                                        <field name="dsw_idno" optional="show" />
+                                        <field name="dsw_bdate" optional="hide" />
+                                        <field name="dsw_sex" optional="hide" />
+                                        <field name="per_natcod" optional="show" />
+                                        <field name="dsw_ocp" optional="show" />
+                                        <field name="dsw_dd" />
+                                        <field name="dsw_rooz" />
+                                        <field name="dsw_mah" />
+                                        <field name="dsw_maz" />
+                                        <field name="dsw_mash" optional="hide" />
+                                        <field name="dsw_totl" />
+                                        <field name="dsw_bime" />
+                                        <field name="dsw_prate" optional="hide" />
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <group>
+                                                <field
+                                                    name="company_id"
+                                                    invisible="1"
+                                                />
+                                                <field name="employee_id" />
+                                                <field name="dsw_fname" />
+                                                <field name="dsw_lname" />
+                                                <field name="dsw_dname" />
+                                                <field name="gender" />
+                                                <field name="per_natcod" />
+                                                <field name="dsw_id1" />
+                                                <field name="dsw_idno" />
+                                                <field name="birthday" />
+                                                <field name="dsw_idplc" />
+                                                <field name="dsw_nat" />
+                                            </group>
+                                            <group>
+                                                <field name="payslip_id" />
+                                                <field name="job_id" readonly="0" />
+                                                <field
+                                                    name="dsw_ocp"
+                                                    attrs="{'readonly': [('job_id', '=', False)]}"
+                                                />
+                                                <field
+                                                    name="dsw_job"
+                                                    attrs="{'readonly': [('job_id', '=', False)]}"
+                                                />
+                                                <field name="recruitment_date" />
+                                                <field name="end_date" />
+                                                <field name="dsw_dd" />
+                                                <field name="dsw_prate" />
+                                            </group>
+                                        </group>
+                                        <group>
+                                            <group>
+                                                <field name="dsw_rooz" />
+                                                <field name="dsw_mah" />
+                                                <field name="dsw_maz" />
+                                                <field name="dsw_mash" />
+                                                <field name="dsw_totl" />
+                                                <field name="dsw_bime" />
+                                            </group>
+                                        </group>
+                                    </form>
+                                </field>
+                            </page>
+                            <page string="Disk Information">
+                                <group>
+                                    <group>
+                                        <field name="dsk_yy" />
+                                        <field name="dsk_mm" />
+                                        <field
+                                            name="dsk_kind"
+                                            attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                        />
+                                        <field
+                                            name="dsk_listno"
+                                            attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                        />
+                                        <field
+                                            name="list_description"
+                                            attrs="{'readonly': [('state', '!=', 'draft')]}"
+                                        />
+                                        <field
+                                            name="dsk_disc"
+                                            attrs="{'invisible': [('list_description', '!=', 'custom')], 'readonly': [('state', '!=', 'draft')]}"
+                                        />
+                                    </group>
+                                    <group>
+                                        <field
+                                            name="dsk_file"
+                                            filename="dsk_filename"
+                                            attrs="{'invisible': [('dsk_file', '=', False)]}"
+                                        />
+                                        <field
+                                            name="dsw_file"
+                                            filename="dsw_filename"
+                                            attrs="{'invisible': [('dsw_file', '=', False)]}"
+                                        />
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Accounting Information">
+                                <group>
+                                    <group>
+                                        <field
+                                            name="journal_id"
+                                            attrs="{'readonly': [('state', '=', 'done')]}"
+                                        />
+                                        <field
+                                            name="debit_id"
+                                            attrs="{'readonly': [('state', '=', 'done')]}"
+                                        />
+                                        <field
+                                            name="credit_id"
+                                            attrs="{'readonly': [('state', '=', 'done')]}"
+                                        />
+                                        <field name="move_id" />
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" />
+                        <field name="message_ids" />
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_insurance_disk_tree_view" model="ir.ui.view">
+            <field name="name">l10n.ir.hr.insurance.disk.tree</field>
+            <field name="model">l10n.ir.hr.insurance.disk</field>
+            <field name="arch" type="xml">
+                <tree string="Disk Karkard">
+                    <field name="name" />
+                    <field name="dsk_kind" />
+                    <field name="dsk_yy" />
+                    <field name="dsk_mm" />
+                    <field name="dsk_tdd" />
+                    <field name="dsk_trooz" optional="show" />
+                    <field name="dsk_tmah" />
+                    <field name="dsk_tmaz" />
+                    <field name="dsk_tmash" optional="hide" />
+                    <field name="dsk_ttotl" optional="show" />
+                    <field name="dsk_tbime" />
+                    <field name="dsk_tkoso" />
+                    <field name="dsk_bic" />
+                    <field name="dsk_rate" optional="show" />
+                    <field name="dsk_prate" optional="hide" />
+                    <field name="dsk_bimh" optional="hide" />
+                    <!-- <field name="mon_pym" optional="hide"/> -->
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_insurance_disk" model="ir.actions.act_window">
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">l10n.ir.hr.insurance.disk</field>
+            <field name="view_mode">tree,form</field>
+            <!-- <field name="view_id" ref="hr_insurance_disk_tree_view"/> -->
+            <field
+                name="view_ids"
+                eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('hr_insurance_disk_tree_view')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('hr_insurance_disk_form_view')})]"
+            />
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create a new quotation, the first step of a new sale!
+              </p><p>
+                Once the quotation is confirmed by the customer, it becomes a sales order.<br
+                    /> You will be able to create an invoice and collect the payment.
+              </p>
+            </field>
+        </record>
+
+
+        <menuitem
+            id="menu_insurance_disk"
+            name="Insurance Disk"
+            action="action_insurance_disk"
+            parent="om_hr_payroll.menu_payroll_employee"
+            sequence="30"
+            groups="om_hr_payroll.group_hr_payroll_user"
+        />
+    </data>
+</odoo>
