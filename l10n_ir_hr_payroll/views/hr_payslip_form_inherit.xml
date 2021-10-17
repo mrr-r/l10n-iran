@@ -4,7 +4,7 @@
     <record model="ir.ui.view" id="view_hr_payslip_inherit_form">
         <field name="name">hr.payslip.inherit.form</field>
         <field name="model">hr.payslip</field>
-        <field name="inherit_id" ref="payroll.hr_payslip_view_form" />
+        <field name="inherit_id" ref="om_hr_payroll.view_hr_payslip_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='line_ids']/tree" position="attributes">
                     <attribute name="decoration-danger">total &lt; 0</attribute>

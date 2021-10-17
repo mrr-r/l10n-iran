@@ -9,7 +9,7 @@
     "license": "AGPL-3",
     "category": "l10n/Technical",
     "summary": "Iran Localization",
-    "depends": ["hr", "payroll"],
+    "depends": ["hr", "om_hr_payroll"],
     "data": [
         "views/hr_employee_inherit.xml",
         "views/hr_payslip_form_inherit.xml",
