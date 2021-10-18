@@ -8,10 +8,15 @@
             <field name="inherit_id" ref="sms.sms_tsms_view_form" />
             <field name="arch" type="xml">
                 <field name="error_code" position="attributes">
-                    <attribute name="attrs">{'invisible': [('error_message', '!=', False)]}</attribute>
+                    <attribute
+                        name="attrs"
+                    >{'invisible': [('error_message', '!=', False)]}</attribute>
                 </field>
                 <field name="error_code" position="after">
-                    <field name="error_message" attrs="{'invisible': [('error_message', '=', False)]}" />
+                    <field
+                        name="error_message"
+                        attrs="{'invisible': [('error_message', '=', False)]}"
+                    />
                 </field>
             </field>
         </record>
