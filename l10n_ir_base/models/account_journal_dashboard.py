@@ -7,12 +7,16 @@ from babel.dates import format_datetime
 from odoo import _, fields, models
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF
 from odoo.tools.misc import get_lang
-
+import platform
 
 class AccountJournal(models.Model):
     _inherit = "account.journal"
 
     def get_bar_graph_datas(self):
+        if platform.system() == 'Windows':
+            FA_LOCALE = 'Persian_Iran'
+        else:
+            FA_LOCALE = 'fa_IR'
         calendar = self.env["res.lang"]._lang_get(self.env.user.lang).calendar
         if calendar == "gregorian":
             return super(AccountJournal, self).get_bar_graph_datas()
@@ -34,13 +38,13 @@ class AccountJournal(models.Model):
                         day=start_week.day,
                         month=start_week.month,
                         year=start_week.year,
-                        locale="fa_IR",
+                        locale=FA_LOCALE,
                     )
                     end_week = jd.date.fromgregorian(
                         day=end_week.day,
                         month=end_week.month,
                         year=end_week.year,
-                        locale="fa_IR",
+                        locale=FA_LOCALE,
                     )
                     label = (
                         str(start_week.day)
@@ -55,14 +59,14 @@ class AccountJournal(models.Model):
                             day=start_week.day,
                             month=start_week.month,
                             year=start_week.year,
-                            locale="fa_IR",
+                            locale=FA_LOCALE,
                         ).strftime("%d %b")
                         + "-"
                         + jd.date.fromgregorian(
                             day=end_week.day,
                             month=end_week.month,
                             year=end_week.year,
-                            locale="fa_IR",
+                            locale=FA_LOCALE,
                         ).strftime("%d %b")
                     )
             data.append(
