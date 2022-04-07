@@ -1,4 +1,5 @@
 import logging
+import platform
 
 import babel.dates
 import jdatetime as jd
@@ -31,6 +32,10 @@ class BaseModelExtend(models.AbstractModel):
 
     @api.model
     def _read_group_format_result(self, data, annotated_groupbys, groupby, domain):
+        if platform.system() == 'Windows':
+            FA_LOCALE = 'Persian_Iran'
+        else:
+            FA_LOCALE = 'fa_IR'
         calendar = self.env["res.lang"]._lang_get(self.env.user.lang).calendar
         if calendar == "gregorian":
             return super(BaseModelExtend, self)._read_group_format_result(
@@ -75,14 +80,14 @@ class BaseModelExtend(models.AbstractModel):
                                 day=value.day,
                                 month=value.month,
                                 year=value.year,
-                                locale="fa_IR",
+                                locale=FA_LOCALE,
                             ).strftime(display_format_changer(gb["display_format"]))
                         else:
                             label = jd.date.fromgregorian(
                                 day=value.day,
                                 month=value.month,
                                 year=value.year,
-                                locale="fa_IR",
+                                locale=FA_LOCALE,
                             ).strftime(display_format_changer(gb["display_format"]))
                     except Exception:
                         _logger.warning(
